@@ -1,0 +1,10 @@
+
+
+var DisplayMovie = props => React.createElement(
+    'div',
+    { 'class': 'movie' },
+    props.movie.title
+);
+
+export default DisplayMovie;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2Rpc3BsYXlNb3ZpZS5qc3giXSwibmFtZXMiOlsiRGlzcGxheU1vdmllIiwicHJvcHMiLCJtb3ZpZSIsInRpdGxlIl0sIm1hcHBpbmdzIjoiOztBQUVBLElBQUlBLGVBQWdCQyxLQUFELElBQ2Y7QUFBQTtBQUFBLE1BQUssU0FBTSxPQUFYO0FBQW9CQSxVQUFNQyxLQUFOLENBQVlDO0FBQWhDLENBREo7O0FBSUEsZUFBZUgsWUFBZiIsImZpbGUiOiJkaXNwbGF5TW92aWUuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcclxuXHJcbnZhciBEaXNwbGF5TW92aWUgPSAocHJvcHMpID0+IChcclxuICAgIDxkaXYgY2xhc3M9J21vdmllJz57cHJvcHMubW92aWUudGl0bGV9PC9kaXY+XHJcbilcclxuXHJcbmV4cG9ydCBkZWZhdWx0IERpc3BsYXlNb3ZpZTsiXX0=
