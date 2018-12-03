@@ -1,5 +1,6 @@
 import DisplayMovie from './displayMovie.js';
 import Search from './Search.js'
+import AddMovie from './AddMovie.js'
 
 
   class BuildMovies extends React.Component{
@@ -32,15 +33,25 @@ import Search from './Search.js'
           });
       }
 
+      addMovie (input) {
+          var movies = this.state.movies;
+          movies.push({title: input});
+          this.setState({
+              movies: movies,
+              display: movies
+          })
+      }
+
       render() {
           return (
         <div>
+            <div class='input-bar'><AddMovie handleInput={this.addMovie.bind(this)}/></div>
             <div class='search-bar'><Search handleSearch={this.handleSearch.bind(this)}/></div>
-          <div class='movie-list'>
-          {
-              this.state.display.map(movie => <DisplayMovie movie={movie} />)
-          }
-          </div>
+            <div class='movie-list'>
+                {
+                    this.state.display.map(movie => <DisplayMovie movie={movie} />)
+                }
+            </div>
           </div>
       );
     }
